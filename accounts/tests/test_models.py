@@ -9,7 +9,7 @@ class UserTestCase(TestCase):
         user.set_password('password12!')
         user.save()
         
-        self.assertEqual(str(user),'Team Rio')
+        self.assertEqual(str(user.first_name +' '+ user.last_name),'Team Rio')
 
 
 class AccountTestCase(TestCase):
@@ -19,4 +19,4 @@ class AccountTestCase(TestCase):
         account = Account.objects.create (user=user, name = 'space')
         account.save()
         
-        self.assertEqual(str(account),"space")
+        self.assertEqual(str(account.name),"space")

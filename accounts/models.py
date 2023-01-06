@@ -28,7 +28,7 @@ class User(AbstractUser):
     REQUIRED_FIELDS = ['first_name', 'last_name', 'username', 'phone_number'] # add phone number as a requirement while signing up
 
     def __str__(self) -> str:
-        return f'{self.first_name} {self.last_name}'
+        return f'{self.first_name} ' '{self.last_name}'
 
     def __init__(self, *args, region=None, **kwargs):
         """
