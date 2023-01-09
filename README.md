@@ -95,6 +95,7 @@ urlpatterns = [
 - Install the djangorestframework jwt library
 
 ```bash
+
 pip install djangorestframework_simplejwt
 ```
 
@@ -138,6 +139,7 @@ To run all tests
 python3 manage.py test
 ```
 To run tests in a particular app
+
 
 ```bash
 python3 manage.py test [appname]
